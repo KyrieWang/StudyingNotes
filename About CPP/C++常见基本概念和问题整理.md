@@ -166,6 +166,7 @@ const String::char* c_str() const
 String::~String()
 {
     delete[] m_pStr;
+    m_pStr = nullptr;
 }
 ```
 
