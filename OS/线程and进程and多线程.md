@@ -236,7 +236,6 @@ ThreadPool::ThreadPool(size_t size = 4) : stop(false) {
                     }
                     --threads_nums;
                     task();
-                    ++threads_nums;
                 }
             }
         );
